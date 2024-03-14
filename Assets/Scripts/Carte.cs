@@ -5,9 +5,10 @@ public class Carte : MonoBehaviour
 {
     public TMP_Text valeurText;
     public TMP_Text enseigneText;
-
+    public CarteData data;
     internal void SetData(CarteData carteData)
     {
+        data = carteData;
         string text = carteData.valeur.ToString();
 
         switch (carteData.valeur)
