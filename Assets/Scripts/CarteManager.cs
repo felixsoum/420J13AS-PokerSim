@@ -52,7 +52,7 @@ public class CarteManager : MonoBehaviour
         for (int i = pile.Count - 1; i >= 1; i--)
         {
             // j ← entier aléatoire entre 0 et i
-            int j = Random.Range(0, i + 1);
+            int j = UnityEngine.Random.Range(0, i + 1);
             // échanger a[j] et a[i]
             (pile[i], pile[j]) = (pile[j], pile[i]);
         }
